@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Music Player</title>
+    </head>
+    <body>
+        
+        <div class="music-player"></div>
+        {% for item in page_obj %}
+        <div class="cover">
+            <img src="{{ item.img.url }}" alt="">
+        </div>
+
+        <div class="titre">
+            <h3>{{ item.artist }}</h3>
+            <h1>{{ item.title }}</h1>
+        </div>
+        {% endfor %}
+
+        <!-- Pagination Navigation -->
+        <a href="{% if page_obj.has_previous %}?page={{ page_obj.previous_page_number }}{% endif %}">
+            <i class="fa fa-step-backward fa-2x"></i>
+        </a>
+        <a href="{% if page_obj.has_next %}?page={{ page_obj.next_page_number }}{% endif %}">
+            <i class="fa fa-step-forward fa-2x"></i>
+        </a>
+    </body>
+</html>

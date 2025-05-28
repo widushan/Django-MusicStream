@@ -26,7 +26,7 @@
         display: block;
         position: absolute;
         width: 400px;
-        height: 700px;
+        height: 1000px;
         margin: auto;
         margin-top: 2%;
         right: 70%;
@@ -46,17 +46,21 @@
         left: 14%;
         width: 70%;
         margin: auto;
+        
         text-align: center;
     }
     .titre {
+        margin-top: -15rem;
         float: left;
         width: 100%;
     }
     .lecteur {
+        color: #fff;
         width: 100%;
         display: block;
-        height: auto;
-        position: relative;
+        min-height: 50px; /* Adjust as needed */
+        overflow: visible;
+        position: absolute;
         float: left;
     }
     .mejs__button>button:focus {
@@ -131,6 +135,8 @@
         padding: 0;
         overflow: visible;
         min-width: 100%;
+        min-height: 50px;
+        overflow: visible;
     }
     .mejs__controls .mejs__time span {
         font-size: 15px;
@@ -239,7 +245,7 @@
     background: transparent linear-gradient(to bottom,rgba(4, 3, 3, 0.9) 50%,rgb(0, 0, 0) 70%) repeat scroll 0 0;
     margin-top: 2%;
     margin-right:0.6% ;
-    box-shadow: 1px 10px 20px 5px #222;;
+    box-shadow: 1px 10px 20px 5px #222;
     }
 
     .lyrics-container {

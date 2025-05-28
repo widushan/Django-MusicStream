@@ -7,7 +7,7 @@ class Song(models.Model):
     image = models.ImageField()
     audio_file = models.FileField()
     audio_link = models.CharField(max_length=200, blank=True, null=True)
-    lyrics = models.TextField(blank=True, null=True)
+    lyrics = models.TextField(null=True)
     duration = models.CharField(max_length=20)
     paginate_by = 2
 

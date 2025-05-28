@@ -6,9 +6,10 @@
     </title>
    </head>
    <body>
-    
+
+      {% for item in page_obj %}
+
       <div class="music-player">
-        {% for item in page_obj %}
        <div class="cover">
         <img alt="" src="{{item.image.url}}"/>
        </div>
@@ -39,6 +40,9 @@
         </div>
      </div>
     </div>
+
+
+    
     
     
     {% endfor %}

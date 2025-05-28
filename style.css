@@ -1,0 +1,13 @@
+.mejs__controls .mejs__time-rail {
+  height: 8px; /* Increase height for better visibility */
+  margin: 10px 0;
+}
+
+.mejs__controls .mejs__time-rail span {
+  height: 8px; /* Match the rail height */
+  background: rgba(255, 255, 255, 0.2); /* Default loaded area */
+}
+
+.mejs__controls .mejs__time-current {
+  background: #5BBB95; /* Current playback progress */
+}

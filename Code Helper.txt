@@ -1,0 +1,6 @@
+cd MusicPlayer
+py manage.py runserver
+
+
+python -m venv --upgrade-deps .venv
+.venv\Scripts\activate

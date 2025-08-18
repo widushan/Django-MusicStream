@@ -4,3 +4,9 @@ py manage.py runserver
 
 python -m venv --upgrade-deps .venv
 .venv\Scripts\activate
+
+
+settings.py
+secret key = "django-insecure-acq0m$49=y96d3-@c1t^q^-7$63on&e6k&%-+f&0$&ul@w341y"
+
+PostgraySQL_URL = "postgresql://music_django_render_user:XsXHoTvZHrrAefPTxgJRLrdAiLf9Axjz@dpg-d2hffdadbo4c73b0esl0-a.oregon-postgres.render.com/music_django_render"

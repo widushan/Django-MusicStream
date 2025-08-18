@@ -22,4 +22,7 @@ jobs:
         - name: Lint with flake8
           run: |
             flake8 .
+        - name: Running the tests
+          run: |
+            python manage.py test
         

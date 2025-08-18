@@ -4,6 +4,6 @@ dj-database-url
 whitenoise
 django-heroku
 flake8
-
+# packages
 # Uncomment to use a Postgres database.
 #psycopg[binary]

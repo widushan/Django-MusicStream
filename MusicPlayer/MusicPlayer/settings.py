@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
-
+import dj_database_url
 import os
 from pathlib import Path
 
@@ -81,6 +81,8 @@ DATABASES = {
         "NAME": BASE_DIR / "db.sqlite3",
     }
 }
+DATABASES["default"] = dj_database_url.parse("postgresql://music_django_render_user:XsXHoTvZHrrAefPTxgJRLrdAiLf9Axjz@dpg-d2hffdadbo4c73b0esl0-a.oregon-postgres.render.com/music_django_render")
+# postgresql://music_django_render_user:XsXHoTvZHrrAefPTxgJRLrdAiLf9Axjz@dpg-d2hffdadbo4c73b0esl0-a.oregon-postgres.render.com/music_django_render
 
 
 # Password validation

@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-acq0m$49=y96d3-@c1t^q^-7$63on&e6k&%-+f&0$&ul@w341y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-musicstream-app.onrender.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
